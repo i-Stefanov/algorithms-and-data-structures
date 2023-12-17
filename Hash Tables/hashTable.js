@@ -15,6 +15,7 @@ class HashTable {
     let result = this.data[this._hash(key)].find((item) => item[0] === key);
     return result;
   }
+
   _hash(key) {
     let hash = 0;
 
@@ -29,4 +30,5 @@ class HashTable {
 const myHashTable = new HashTable(50);
 myHashTable.set("grapes", 10000);
 myHashTable.set("oranges", 1000);
-console.log(myHashTable.get("oranges"));
+// console.log(myHashTable.get("oranges"));
+myHashTable.getKeys();
