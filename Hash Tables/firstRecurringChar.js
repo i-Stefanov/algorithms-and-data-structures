@@ -38,7 +38,7 @@ function firstRecurringChar3(arr) {
     }
   }
   return undefined;
-}
+} // O(n)
 function firstRecurringChar4(arr) {
   for (let i = 0; i < arr.length; i++) {
     let elementToCompareTo = arr[i];
@@ -49,6 +49,6 @@ function firstRecurringChar4(arr) {
       }
     }
   }
-}
+} // O(n^2)
 
 firstRecurringChar2([2, 5, 5, 2, 3, 5, 1, 2, 4]);
